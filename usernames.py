@@ -33,11 +33,9 @@ site = input("Wordpress site to scan: ")
 print("")
 print("")
 
-# set author numbers to enumerate
-authNum = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"]
 
-for num in authNum:
-    url = ("http://" + site + "/?author=" + num)
+for num in range(1,10):
+    url = ("http://" + site + "/?author=" + str(num))
     res = requests.get(url)
     response = requests.get(url)
 
