@@ -48,4 +48,4 @@ for num in range(1,10):
             login = login[:-1]
             print("Author login: " + login)
         else:
-            print("")
+            ()
